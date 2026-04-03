@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Force Premium Dark Mode as Default */
+  --background: #030712; /* Gray-950 */
+  --foreground: #f9fafb; /* Gray-50 */
+  
+  --primary: #3b82f6; /* Blue-500 */
+  --primary-hover: #60a5fa; /* Blue-400 */
+  
+  --secondary: #a855f7; /* Purple-500 */
+  --secondary-hover: #c084fc; /* Purple-400 */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-lg border border-white/5;
+  }
+}
