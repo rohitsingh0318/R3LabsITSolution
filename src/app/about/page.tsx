@@ -126,9 +126,14 @@ export default function About() {
                 variants={fadeInUp}
                 className="glass-dark rounded-2xl p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 border border-white/5 hover:border-primary/30"
              >
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-white/100 group-hover:border-primary/50 transition-colors">
-                  <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
-                </div>
+                <div className="w-32 h-32 relative rounded-full overflow-hidden mb-6 border-4 border-white/100 group-hover:border-primary/50 transition-colors">
+                  <Image 
+                    src={member.img} 
+                    alt={member.name} 
+                    fill
+                    className="object-cover"
+                  />
+              </div>
                 <h3 className="text-2xl font-bold mb-2 text-white">{member.name}</h3>
                 <p className="text-primary font-medium">{member.role}</p>
              </motion.div>

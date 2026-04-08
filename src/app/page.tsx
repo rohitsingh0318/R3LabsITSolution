@@ -11,6 +11,7 @@ import {
   Bot, 
   CheckCircle2 
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   const fadeInUp = {
@@ -99,7 +100,7 @@ export default function Home() {
                 Why Choose <span className="text-primary">R3 Labs IT Solution</span>
               </h2>
               <p className="text-gray-400 mb-8 text-lg">
-                We don't just write code; we build scalable engineering marvels that drive real business value.
+                We don&apos;t just write code; we build scalable engineering marvels that drive real business value.
               </p>
               
               <div className="space-y-4">
@@ -204,7 +205,7 @@ export default function Home() {
           >
             <div className="max-w-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
-              <p className="text-gray-400">Discover how we've helped businesses transform their ideas into successful digital products.</p>
+              <p className="text-gray-400">Discover how we&apos;ve helped businesses transform their ideas into successful digital products.</p>
             </div>
             <Link 
               href="/projects" 
@@ -264,7 +265,7 @@ export default function Home() {
             className="glass-dark border border-white/10 p-12 md:p-20 rounded-3xl max-w-4xl mx-auto shadow-2xl"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Let's Build Something <span className="text-primary">Amazing</span> Together
+              Let&apos;s Build Something <span className="text-primary">Amazing</span> Together
             </h2>
             <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
               Ready to take your business to the next level? Contact us today to discuss your project requirements and receive a free consultation.

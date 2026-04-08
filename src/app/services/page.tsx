@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Cloud, Workflow, Bot, MonitorSmartphone, ArrowRight, Palette } from "lucide-react";
+import { Code2, Workflow, Bot, MonitorSmartphone, ArrowRight, Palette } from "lucide-react";
 
 export default function Services() {
   const fadeInUp = {

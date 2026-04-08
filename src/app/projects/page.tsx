@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const fadeInUp = {
@@ -92,7 +93,7 @@ export default function Projects() {
             Our <span className="text-primary">Projects</span>
           </h1>
           <p className="text-lg text-gray-400 leading-relaxed">
-            Discover how we've helped startups and enterprises transform their ideas into successful digital products.
+            Discover how we&apos;ve helped startups and enterprises transform their ideas into successful digital products.
           </p>
         </motion.div>
       </section>
@@ -117,12 +118,13 @@ export default function Projects() {
                 <div className={`relative h-64 md:h-80 w-full bg-gradient-to-br ${project.color} overflow-hidden`}>
                    <div className={`absolute inset-0 opacity-20 ${project.imagePattern}`}></div>
                    {project.image && (
-                     <img 
-                       src={project.image} 
-                       alt={project.title} 
-                       className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-80 group-hover:scale-110 transition-transform duration-700" 
-                     />
-                   )}
+                      <Image 
+                        src={project.image} 
+                        alt={project.title} 
+                        fill
+                        className="object-cover mix-blend-overlay opacity-80 group-hover:scale-110 transition-transform duration-700"
+                      />
+                    )}
                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
                    
                    {/* Floating Tags */}

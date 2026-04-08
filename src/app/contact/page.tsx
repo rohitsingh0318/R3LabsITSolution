@@ -31,7 +31,7 @@ export default function Contact() {
             Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Touch</span>
           </h1>
           <p className="text-lg text-gray-400">
-            Have a project in mind or want to learn more about our services? Let's talk about how we can help you achieve your goals.
+            Have a project in mind or want to learn more about our services? Let&apos;s talk about how we can help you achieve your goals.
           </p>
         </motion.div>
       </section>
@@ -96,7 +96,6 @@ export default function Contact() {
               </div>
            </motion.div>
 
-           {/* Contact Form (Right Side) */}
            <motion.div 
              initial={{ opacity: 0, x: 20 }}
              animate={{ opacity: 1, x: 0 }}

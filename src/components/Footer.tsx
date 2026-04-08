@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, ExternalLink } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
